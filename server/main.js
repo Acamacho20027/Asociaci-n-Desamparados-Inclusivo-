@@ -356,15 +356,20 @@ class NavigationManager {
   }
 
   setActiveLink() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPage = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-links a');
     
     navLinks.forEach(link => {
       const href = link.getAttribute('href');
-      if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+      link.classList.remove('active');
+      
+      // Detectar página activa
+      if (currentPage.includes('index.html') || currentPage === '/' || currentPage === '/views/' || currentPage === '/views') {
+        if (href === 'index.html') {
+          link.classList.add('active');
+        }
+      } else if (currentPage.includes(href)) {
         link.classList.add('active');
-      } else {
-        link.classList.remove('active');
       }
     });
   }

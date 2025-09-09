@@ -6,9 +6,10 @@ Sitio web estático profesional para la Asociación Desampa Inclusivo, desarroll
 
 ### ✨ Diseño y Funcionalidad
 - **Diseño Responsivo**: Adaptable a dispositivos móviles, tablets y escritorio
-- **Menú de Navegación Fijo**: Navegación superior con logo y enlaces
+- **Menú de Navegación Fijo**: Navegación superior con logo y enlaces centrados
 - **Menú de Accesibilidad**: Funcionalidades completas de accesibilidad web
-- **Diseño Profesional**: Interfaz limpia y moderna con variables CSS
+- **Diseño Profesional**: Interfaz limpia y moderna con fondo blanco y header azul
+- **Navegación Inteligente**: Detección automática de página activa
 
 ### ♿ Accesibilidad
 - **Alto Contraste**: Modo de alto contraste para mejor visibilidad
@@ -41,8 +42,12 @@ Proyecto_ADI/
 ├── styles/                   # Archivos CSS
 │   └── style.css            # Estilos principales
 ├── server/                   # Archivos JavaScript
-│   └── main.js              # Funcionalidades principales
+│   ├── main.js              # Funcionalidades principales
+│   └── server.js            # Servidor local
 ├── images/                   # Imágenes del proyecto
+├── .vscode/                  # Configuración VS Code
+│   └── launch.json          # Configuración de depuración
+├── package.json             # Configuración del proyecto
 └── README.md                # Documentación
 ```
 
@@ -91,11 +96,11 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 ```
 
 ### Colores
-- **Primario**: Azul oscuro (#2c3e50)
-- **Secundario**: Azul medio (#3498db)
-- **Acento**: Azul claro (#61afef)
-- **Texto**: Blanco (#ffffff)
-- **Fondo**: Gris azulado (#34495e)
+- **Primario**: Azul oscuro (#1e3a8a)
+- **Secundario**: Azul medio (#3b82f6)
+- **Acento**: Azul claro (#2563eb)
+- **Texto**: Gris oscuro (#1f2937)
+- **Fondo**: Blanco (#ffffff)
 
 ## 📱 Compatibilidad
 
