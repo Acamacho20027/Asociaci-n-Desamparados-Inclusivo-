@@ -74,6 +74,13 @@ Proyecto_ADI/
 - **Cuerpos Libres**: Iniciativa de aceptación corporal y diversidad
 - **Reportajes**: Producción de contenido audiovisual documental
 
+### 🍰 Emprendimientos Inclusivos
+- **Panadería VillaZam**: Panadería y repostería personalizada (Rosibel Villalobos Mena)
+- **Repostería Fina Boronitas**: Bocadillos y postres para toda ocasión (Jenny Porras)
+- **Sucucactus Paa'Macho**: Plantas ornamentales y manualidades recicladas (Jenny Rivera Rivera)
+- **Repostería La Bendición**: Postres para actividades festivas (Cristofer Ducan)
+- **Queque Navideño**: Deliciosos queques navideños (Catalina Flores Jiménez)
+
 ### 🏆 Logros Destacados
 - **Día Nacional de la Persona con Discapacidad**: Primera celebración organizada en Desamparados (2016)
 - **Representación en Asamblea Nacional**: Luis Flores como representante de juventudes con discapacidad
@@ -154,6 +161,20 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.5.0 - Sección de Emprendimientos con Contactos Reales
+- ✨ **Nuevo**: Sección completa de Panadería y Repostería con 5 emprendedores
+- 📱 **Nuevo**: Enlaces de WhatsApp funcionales para todos los emprendedores
+- 📞 **Nuevo**: Números de teléfono visibles en cada tarjeta
+- 🖼️ **Actualizado**: Imágenes optimizadas con `object-fit: contain`
+- 🎨 **Mejorado**: Diseño de tarjetas con altura aumentada (250px)
+- 📱 **Mejorado**: Estilos responsive para dispositivos móviles
+- 🔗 **Agregado**: Enlaces reales de contacto:
+  * Panadería VillaZam: WhatsApp, Facebook, Email
+  * Repostería Fina Boronitas: WhatsApp
+  * Queque Navideño: WhatsApp
+- 🎯 **Optimizado**: Tooltips informativos en iconos de contacto
+- 📱 **Mejorado**: Números de teléfono con diseño destacado
 
 ### v1.4.0 - Sección de Apoyo con Modales Interactivos
 - ✨ **Nuevo**: Sección de apoyo con cards de TCU y Donativos

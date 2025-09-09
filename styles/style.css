@@ -1417,6 +1417,240 @@ body.custom-cursor {
   }
 }
 
+/* Estilos para la sección de emprendimientos */
+.category-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xxl);
+  padding: var(--spacing-lg);
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.category-btn {
+  background: #ffffff;
+  color: var(--text-secondary);
+  border: 2px solid #e2e8f0;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: 8px;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  min-width: 150px;
+}
+
+.category-btn:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+.category-btn.active {
+  background: var(--primary-color);
+  color: #ffffff;
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+.category-content {
+  display: none;
+}
+
+.category-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.category-title {
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: var(--spacing-xxl);
+}
+
+.entrepreneurs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.entrepreneur-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: all var(--transition-normal);
+}
+
+.entrepreneur-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.entrepreneur-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entrepreneur-image .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform var(--transition-normal);
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.entrepreneur-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.entrepreneur-content {
+  padding: var(--spacing-xl);
+}
+
+.entrepreneur-name {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.3;
+}
+
+.entrepreneur-person {
+  font-size: var(--font-size-base);
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.entrepreneur-description {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-secondary);
+  font-size: var(--font-size-small);
+}
+
+.location-info i {
+  color: var(--secondary-color);
+}
+
+.contact-icons {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.phone-number {
+  text-align: center;
+  margin-top: var(--spacing-md);
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: var(--font-size-small);
+  background: #f0f9ff;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 8px;
+  border: 1px solid #e0f2fe;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  font-size: var(--font-size-large);
+}
+
+.contact-icon:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.contact-icon.whatsapp:hover {
+  background: #25d366;
+}
+
+.contact-icon.facebook:hover {
+  background: #1877f2;
+}
+
+.contact-icon.email:hover {
+  background: #ea4335;
+}
+
+.coming-soon {
+  text-align: center;
+  font-size: var(--font-size-large);
+  color: var(--text-secondary);
+  font-style: italic;
+  padding: var(--spacing-xxl);
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #e2e8f0;
+}
+
+/* Responsive para emprendimientos */
+@media (max-width: 768px) {
+  .category-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .entrepreneurs-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .entrepreneur-image {
+    height: 200px;
+  }
+  
+  .entrepreneur-content {
+    padding: var(--spacing-lg);
+  }
+  
+  .contact-icons {
+    justify-content: center;
+  }
+}
+
 /* Sección de Logros */
 .achievements-section {
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
