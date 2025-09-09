@@ -1,0 +1,22 @@
+{
+  "name": "asociacion-desampa-inclusivo",
+  "version": "1.0.0",
+  "description": "Sitio web de la Asociación Desampa Inclusivo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "inclusión",
+    "accesibilidad",
+    "asociación",
+    "desarrollo comunitario"
+  ],
+  "author": "Asociación Desampa Inclusivo",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

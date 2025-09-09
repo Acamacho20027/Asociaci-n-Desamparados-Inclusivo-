@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Asociación Desampa Inclusivo</title>
+    <meta name="description" content="Contacta con la Asociación Desampa Inclusivo">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">ADI</div>
+                <div class="logo-text">
+                    <div class="logo-title">ADI</div>
+                    <div class="logo-subtitle">Asociación Desampa Inclusivo</div>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="emprendimientos.html">Emprendimientos</a></li>
+                <li><a href="videos.html">Videos Tutoriales</a></li>
+                <li><a href="danza.html">Ya! Danza</a></li>
+                <li><a href="deportes.html">Deportes Adaptados</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+            
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="YouTube">📺</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title">Contacto</h1>
+                    <p class="hero-subtitle">Estamos aquí para ayudarte y responder todas tus preguntas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Información de Contacto -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Información de Contacto</h2>
+                <p class="section-subtitle">Múltiples formas de ponerte en contacto con nosotros</p>
+                
+                <div class="grid grid-3">
+                    <div class="card text-center">
+                        <h3 class="card-title">📍 Dirección</h3>
+                        <p class="card-content">
+                            <strong>Asociación Desampa Inclusivo</strong><br>
+                            Calle Principal #123<br>
+                            Barrio Desampa<br>
+                            San José, Costa Rica<br>
+                            10101
+                        </p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <h3 class="card-title">📞 Teléfonos</h3>
+                        <p class="card-content">
+                            <strong>Oficina Principal:</strong><br>
+                            +506 2222-3333<br><br>
+                            <strong>WhatsApp:</strong><br>
+                            +506 8888-9999<br><br>
+                            <strong>Emergencias:</strong><br>
+                            +506 7777-8888
+                        </p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <h3 class="card-title">📧 Correo Electrónico</h3>
+                        <p class="card-content">
+                            <strong>General:</strong><br>
+                            info@desampainclusivo.org<br><br>
+                            <strong>Programas:</strong><br>
+                            programas@desampainclusivo.org<br><br>
+                            <strong>Voluntariado:</strong><br>
+                            voluntarios@desampainclusivo.org
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Horarios -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Horarios de Atención</h2>
+                
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3 class="card-title">Oficina Administrativa</h3>
+                        <div class="schedule-info">
+                            <p><strong>Lunes a Viernes:</strong> 8:00 AM - 5:00 PM</p>
+                            <p><strong>Sábados:</strong> 9:00 AM - 1:00 PM</p>
+                            <p><strong>Domingos:</strong> Cerrado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 class="card-title">Programas y Actividades</h3>
+                        <div class="schedule-info">
+                            <p><strong>Lunes a Viernes:</strong> 2:00 PM - 8:00 PM</p>
+                            <p><strong>Sábados:</strong> 9:00 AM - 4:00 PM</p>
+                            <p><strong>Domingos:</strong> 10:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Formulario de Contacto -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Envíanos un Mensaje</h2>
+                <p class="section-subtitle">Completa el formulario y nos pondremos en contacto contigo</p>
+                
+                <div class="grid grid-2">
+                    <div class="card">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="nombre" class="form-label">Nombre Completo *</label>
+                                <input type="text" id="nombre" name="nombre" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="asunto" class="form-label">Asunto *</label>
+                                <select id="asunto" name="asunto" class="form-input" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="informacion">Información general</option>
+                                    <option value="emprendimientos">Programa de emprendimientos</option>
+                                    <option value="videos">Videos tutoriales</option>
+                                    <option value="danza">Ya! Danza</option>
+                                    <option value="deportes">Deportes adaptados</option>
+                                    <option value="voluntariado">Voluntariado</option>
+                                    <option value="donaciones">Donaciones</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensaje" class="form-label">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" class="form-textarea" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <input type="checkbox" name="acepto" required>
+                                    Acepto recibir información sobre los programas de la asociación
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 class="card-title">¿Por qué contactarnos?</h3>
+                        <ul class="card-content">
+                            <li><strong>Información sobre programas:</strong> Conoce más sobre nuestros servicios</li>
+                            <li><strong>Inscripciones:</strong> Únete a nuestros programas</li>
+                            <li><strong>Voluntariado:</strong> Ayuda a hacer la diferencia</li>
+                            <li><strong>Donaciones:</strong> Apoya nuestra causa</li>
+                            <li><strong>Colaboraciones:</strong> Trabajemos juntos</li>
+                            <li><strong>Consultas:</strong> Resolvemos tus dudas</li>
+                        </ul>
+                        
+                        <h3 class="card-title mt-4">Redes Sociales</h3>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link">📘 Facebook</a>
+                            <a href="#" class="social-link">📷 Instagram</a>
+                            <a href="#" class="social-link">📺 YouTube</a>
+                            <a href="#" class="social-link">🐦 Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Ubicación -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">¿Cómo Llegar?</h2>
+                
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3 class="card-title">Instrucciones de Llegada</h3>
+                        <div class="directions">
+                            <p><strong>En Automóvil:</strong></p>
+                            <ul>
+                                <li>Desde el centro de San José, tome la carretera hacia Desampa</li>
+                                <li>Gire en la segunda entrada del Barrio Desampa</li>
+                                <li>Continúe 200 metros hasta encontrar nuestro edificio</li>
+                                <li>Estacionamiento disponible en el lugar</li>
+                            </ul>
+                            
+                            <p><strong>En Transporte Público:</strong></p>
+                            <ul>
+                                <li>Ruta 201: Baja en la parada "Desampa Centro"</li>
+                                <li>Ruta 205: Baja en la parada "Barrio Desampa"</li>
+                                <li>Camine 5 minutos hacia nuestro edificio</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 class="card-title">Mapa de Ubicación</h3>
+                        <div class="map-placeholder">
+                            <div class="map-content">
+                                <p>🗺️ Mapa interactivo</p>
+                                <p>Aquí se mostraría un mapa con nuestra ubicación exacta</p>
+                                <p><strong>Coordenadas:</strong> 9.9281° N, 84.0907° W</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Preguntas Frecuentes -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Cómo puedo inscribirme en los programas?</h3>
+                        <p class="faq-answer">
+                            Puedes inscribirte completando el formulario de contacto, llamando a nuestros teléfonos 
+                            o visitando nuestras oficinas. Te contactaremos para coordinar el proceso de inscripción.
+                        </p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Los programas tienen costo?</h3>
+                        <p class="faq-answer">
+                            La mayoría de nuestros programas son gratuitos. Algunos talleres especializados 
+                            pueden tener un costo mínimo para cubrir materiales. Consulta con nosotros para más detalles.
+                        </p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Qué tipo de discapacidades atienden?</h3>
+                        <p class="faq-answer">
+                            Atendemos a personas con diferentes tipos de discapacidad: física, intelectual, 
+                            sensorial y múltiple. Nuestros programas están diseñados para ser inclusivos y adaptables.
+                        </p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Cómo puedo ser voluntario?</h3>
+                        <p class="faq-answer">
+                            ¡Excelente pregunta! Puedes ser voluntario enviando un correo a voluntarios@desampainclusivo.org 
+                            o completando el formulario de contacto indicando tu interés en el voluntariado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.</p>
+            <p>Promoviendo la inclusión y el desarrollo comunitario</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../server/main.js"></script>
+</body>
+</html>
