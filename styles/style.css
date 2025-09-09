@@ -1510,7 +1510,7 @@ body.custom-cursor {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: center;
+  object-position: center bottom;
   transition: transform var(--transition-normal);
   background: #ffffff;
   padding: 10px;

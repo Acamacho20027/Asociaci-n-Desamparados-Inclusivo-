@@ -90,6 +90,9 @@ Proyecto_ADI/
 - **Creaciones Jaclin**: Artículos para organización de fiestas y artículos comestibles (Jaclin Andrea Villalta López)
 - **La Tiendita de Jen**: Venta de ropa y accesorios, camisetas sublimadas (Jenny Rivera Rivera)
 
+#### Belleza
+- **Nutri Belleza**: Distribución de productos de nutrición y belleza, servicios de cuidado personal (Tanggi Davis)
+
 ### 🏆 Logros Destacados
 - **Día Nacional de la Persona con Discapacidad**: Primera celebración organizada en Desamparados (2016)
 - **Representación en Asamblea Nacional**: Luis Flores como representante de juventudes con discapacidad
@@ -170,6 +173,16 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.7.0 - Sección de Belleza con Emprendedor
+- ✨ **Nuevo**: Sección de Belleza con 1 emprendedor (Nutri Belleza)
+- 🖼️ **Preparado**: Espacio para imagen de Nutri Belleza (NutriBelleza.jpg)
+- 📱 **Nuevo**: Enlaces de WhatsApp y Facebook funcionales
+- 📞 **Nuevo**: Número de teléfono visible en la tarjeta
+- 🎨 **Mejorado**: Diseño unificado con secciones anteriores
+- 📱 **Mejorado**: Estilos responsive para dispositivos móviles
+- 🔗 **Agregado**: Enlaces reales de contacto para Nutri Belleza
+- 📍 **Agregado**: Información de ubicación (Desamparados)
 
 ### v1.6.0 - Sección de Arte con Imágenes Reales
 - ✨ **Nuevo**: Sección completa de Arte con 5 emprendedores artísticos
