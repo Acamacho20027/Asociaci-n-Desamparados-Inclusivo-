@@ -1228,10 +1228,41 @@ body.custom-cursor {
 
 .achievement-image {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
+  object-position: center;
   border-radius: 8px;
   margin-bottom: var(--spacing-lg);
+  transition: transform var(--transition-normal);
+}
+
+.achievement-card:hover .achievement-image {
+  transform: scale(1.02);
+}
+
+/* Estilos específicos para mejorar la visualización de imágenes de logros */
+.achievement-image[alt*="CAR SHOW"] {
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: var(--spacing-sm);
+}
+
+.achievement-image[alt*="Asamblea Nacional"] {
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: var(--spacing-sm);
+}
+
+/* Ajustes responsive para las imágenes de logros */
+@media (max-width: 768px) {
+  .achievement-image {
+    height: 200px;
+  }
+  
+  .achievement-image[alt*="CAR SHOW"],
+  .achievement-image[alt*="Asamblea Nacional"] {
+    height: 180px;
+  }
 }
 
 .achievement-content h4 {

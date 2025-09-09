@@ -74,6 +74,11 @@ Proyecto_ADI/
 - **Cuerpos Libres**: Iniciativa de aceptación corporal y diversidad
 - **Reportajes**: Producción de contenido audiovisual documental
 
+### 🏆 Logros Destacados
+- **Día Nacional de la Persona con Discapacidad**: Primera celebración organizada en Desamparados (2016)
+- **Representación en Asamblea Nacional**: Luis Flores como representante de juventudes con discapacidad
+- **CAR SHOW INCLUSIVO**: Evento con carros adaptados y conductores con discapacidad
+
 ### Menú de Accesibilidad
 Haz clic en el botón ♿ en la esquina superior derecha para acceder a las opciones de accesibilidad:
 - **Contraste +**: Activar alto contraste
@@ -144,6 +149,16 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.3.0 - Actualización de Sección de Logros
+- ✨ **Nuevo**: Cards de logros con contenido específico y real
+- 🖼️ **Actualizado**: Imágenes específicas para cada logro:
+  * Día Nacional de la Persona con Discapacidad
+  * Representación en Asamblea Nacional de la Persona Joven
+  * CAR SHOW INCLUSIVO
+- 🎨 **Mejorado**: Estilos optimizados para visualización de imágenes
+- 📱 **Mejorado**: Diseño responsive para cards de logros
+- 🔧 **Optimizado**: `object-fit: contain` para preservar proporciones de imágenes
 
 ### v1.2.0 - Actualización de Actividades y Anuncios
 - ✨ **Nuevo**: Carrusel de anuncios con imágenes específicas
