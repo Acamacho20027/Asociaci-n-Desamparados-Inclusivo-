@@ -93,6 +93,10 @@ Proyecto_ADI/
 #### Belleza
 - **Nutri Belleza**: Distribución de productos de nutrición y belleza, servicios de cuidado personal (Tanggi Davis)
 
+#### Tecnología
+- **CompuGamer CR**: Venta de accesorios y reparación de tecnología
+- **Caritibu**: Caricaturas personalizadas digitales
+
 ### 🏆 Logros Destacados
 - **Día Nacional de la Persona con Discapacidad**: Primera celebración organizada en Desamparados (2016)
 - **Representación en Asamblea Nacional**: Luis Flores como representante de juventudes con discapacidad
@@ -173,6 +177,25 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.8.1 - Mejoras en Sección de Tecnología
+- 🖼️ **Actualizado**: Imágenes reales para emprendedores tecnológicos
+- 🖥️ **Imagen**: CompuGamer CR ahora usa compugamer.jpg
+- 🎨 **Imagen**: Caritibu ahora usa caritibu.png
+- 📐 **Mejorado**: Tarjetas de tecnología con altura uniforme
+- 🎨 **Mejorado**: Ajuste de padding en imágenes de emprendedores
+- 📱 **Mejorado**: Mejor posicionamiento de imágenes en tarjetas
+
+### v1.8.0 - Sección de Tecnología con Emprendedores
+- ✨ **Nuevo**: Sección de Tecnología con 2 emprendedores
+- 🖥️ **Nuevo**: CompuGamer CR - Venta de accesorios y reparación de tecnología
+- 🎨 **Nuevo**: Caritibu - Caricaturas personalizadas digitales
+- 🖼️ **Preparado**: Espacios para imágenes de emprendedores tecnológicos
+- 📱 **Nuevo**: Enlaces de WhatsApp, Facebook y Email funcionales
+- 📞 **Nuevo**: Números de teléfono visibles en las tarjetas
+- 🎨 **Mejorado**: Diseño unificado con todas las secciones anteriores
+- 📱 **Mejorado**: Estilos responsive para dispositivos móviles
+- 🔗 **Agregado**: Enlaces reales de contacto para ambos emprendedores
 
 ### v1.7.0 - Sección de Belleza con Emprendedor
 - ✨ **Nuevo**: Sección de Belleza con 1 emprendedor (Nutri Belleza)

@@ -1513,12 +1513,33 @@ body.custom-cursor {
   object-position: center bottom;
   transition: transform var(--transition-normal);
   background: #ffffff;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
   border-radius: 8px;
 }
 
 .entrepreneur-card:hover .card-image {
   transform: scale(1.05);
+}
+
+/* Asegurar que las tarjetas de tecnología tengan la misma altura */
+.category-section:last-of-type .entrepreneurs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  align-items: stretch;
+}
+
+.category-section:last-of-type .entrepreneur-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.category-section:last-of-type .entrepreneur-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .entrepreneur-content {
