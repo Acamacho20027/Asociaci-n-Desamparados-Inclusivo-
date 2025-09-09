@@ -62,8 +62,8 @@ Proyecto_ADI/
 
 ### Navegación
 - **Inicio**: Página principal con información general, carrusel de anuncios y actividades
-- **Emprendimientos**: Programa de emprendimientos inclusivos
-- **Videos Tutoriales**: Contenido educativo accesible
+- **Emprendimientos**: Programa de emprendimientos inclusivos (Panadería, Arte, Belleza, Tecnología)
+- **Videos Tutoriales**: Contenido educativo accesible con tutoriales de tecnología
 - **Ya! Danza**: Programa de danza inclusiva
 - **Deportes Adaptados**: Actividades deportivas adaptadas
 - **Contacto**: Información de contacto y formulario
@@ -73,6 +73,23 @@ Proyecto_ADI/
 - **Ya!Danza**: Programa de danza inclusiva y expresión artística
 - **Cuerpos Libres**: Iniciativa de aceptación corporal y diversidad
 - **Reportajes**: Producción de contenido audiovisual documental
+
+### 🎥 Videos Tutoriales
+
+#### Tutoriales de Tecnología
+- **Correo Electrónico Gmail**: Cómo crear una cuenta nueva de Gmail paso a paso
+- **Microsoft Teams**: Tutorial completo para crear cuenta y usar todas sus funciones
+- **Zoom**: Guía para crear cuenta, instalar en Windows y usar para videollamadas
+- **Facebook**: Tutorial para crear cuenta de manera segura y configurar perfil
+- **Instagram**: Aprende a crear cuenta, configurar perfil y subir fotos
+- **Outlook/Hotmail**: Tutorial para crear cuenta y gestionar correos electrónicos
+- **WhatsApp Web**: Aprende a usar WhatsApp desde la computadora
+
+#### Características de Accesibilidad
+- **Subtítulos y Transcripciones**: Todos los videos incluyen subtítulos en español
+- **Descripción de Audio**: Videos con descripción para personas con discapacidad visual
+- **Calidad HD**: Miniaturas de alta calidad (hasta 1280x720)
+- **Reproducción Optimizada**: Carga bajo demanda para mejor rendimiento
 
 ### 🍰 Emprendimientos Inclusivos
 
@@ -177,6 +194,19 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.9.0 - Sección de Videos Tutoriales con Calidad HD
+- ✨ **Nuevo**: Sección completa de Videos Tutoriales con 6 tutoriales
+- 🎥 **Nuevo**: Tutoriales de tecnología: Gmail, Microsoft Teams, Zoom, Facebook, Instagram, Outlook/Hotmail, WhatsApp
+- 🖼️ **Nuevo**: Miniaturas de alta calidad usando URLs directas de YouTube (maxresdefault.jpg)
+- 🎨 **Nuevo**: Sistema de reproducción con placeholders personalizados
+- 📱 **Nuevo**: Botones de reproducción elegantes con efectos hover
+- 🎯 **Nuevo**: Títulos superpuestos personalizados para cada video
+- 🔧 **Nuevo**: Funcionalidad de clic para cargar videos bajo demanda
+- 📱 **Mejorado**: Diseño responsive con grid de 2 columnas
+- ♿ **Nuevo**: Sección de características de accesibilidad para videos
+- 🎨 **Mejorado**: Integración visual perfecta con el diseño del sitio
+- 🚀 **Optimizado**: Carga rápida de miniaturas sin elementos de marca externos
 
 ### v1.8.1 - Mejoras en Sección de Tecnología
 - 🖼️ **Actualizado**: Imágenes reales para emprendedores tecnológicos

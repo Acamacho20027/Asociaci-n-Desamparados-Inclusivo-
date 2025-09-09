@@ -618,11 +618,19 @@ body.custom-cursor {
   justify-content: center;
   background: linear-gradient(45deg, #e9ecef, #dee2e6);
   color: #6c757d;
+  flex-direction: column;
 }
 
 .play-button {
   font-size: 3rem;
   margin-bottom: var(--spacing-sm);
+  opacity: 0.8;
+  transition: all var(--transition-fast);
+}
+
+.video-thumbnail:hover .play-button {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .video-info {
@@ -631,6 +639,8 @@ body.custom-cursor {
   font-size: var(--font-size-small);
   color: var(--text-secondary);
   margin-top: var(--spacing-sm);
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
 }
 
 .video-category {
@@ -639,6 +649,250 @@ body.custom-cursor {
   padding: 2px 8px;
   border-radius: 12px;
   font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Estilos para videos embebidos */
+.video-embed {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin-bottom: var(--spacing-md);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background: #000;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.video-embed:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Ocultar el iframe inicialmente */
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  background: #000;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+/* Mostrar el iframe solo cuando se reproduce */
+.video-embed.playing iframe {
+  opacity: 1;
+}
+
+/* Estilos para la imagen de fondo de alta calidad */
+.video-embed {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video-embed.playing {
+  background-image: none !important;
+}
+
+/* Overlay sutil para mejorar la presentación */
+.video-embed::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.video-embed:hover::before {
+  opacity: 1;
+}
+
+/* Botón de reproducción personalizado superpuesto */
+.video-embed::after {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--accent-color);
+  z-index: 2;
+  transition: all var(--transition-normal);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.video-embed:hover::after {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Ocultar el botón cuando se reproduce */
+.video-embed.playing::after {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Título del video superpuesto */
+.video-title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: var(--spacing-lg);
+  z-index: 2;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  text-align: center;
+  transition: opacity var(--transition-normal);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.video-embed.playing .video-title-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Estilos adicionales para mejorar la calidad de las miniaturas */
+.video-embed {
+  /* Mejorar el renderizado */
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.video-embed iframe {
+  /* Mejorar la calidad de renderizado */
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  /* Suavizado adicional */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mejorar la presentación en dispositivos móviles */
+@media (max-width: 768px) {
+  .video-embed {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-embed iframe {
+    border-radius: 8px;
+  }
+  
+  .video-embed::before {
+    border-radius: 8px;
+  }
+  
+  .video-embed::after {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .video-title-overlay {
+    padding: var(--spacing-md);
+    font-size: var(--font-size-small);
+  }
+}
+
+/* Estilos específicos para las tarjetas de tutoriales */
+.tutorial-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-normal);
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.tutorial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), #1d4ed8);
+}
+
+.tutorial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent-color);
+}
+
+.tutorial-title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--accent-color);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.tutorial-description {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-base);
+}
+
+.tutorial-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid #e2e8f0;
+}
+
+.tutorial-category {
+  background: linear-gradient(135deg, var(--accent-color), #1d4ed8);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 20px;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tutorial-duration {
+  color: var(--text-secondary);
+  font-size: var(--font-size-small);
+  font-weight: 500;
 }
 
 /* Sport Info */
@@ -1869,6 +2123,31 @@ body.custom-cursor {
   
   .modal-image {
     margin-bottom: var(--spacing-lg);
+  }
+  
+  /* Responsive para videos tutoriales */
+  .video-thumbnail {
+    height: 150px;
+  }
+  
+  .play-button {
+    font-size: 2.5rem;
+  }
+  
+  .video-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  
+  .tutorial-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .tutorial-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
   }
 }
   
