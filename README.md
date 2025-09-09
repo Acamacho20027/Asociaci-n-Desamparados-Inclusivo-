@@ -75,11 +75,20 @@ Proyecto_ADI/
 - **Reportajes**: Producción de contenido audiovisual documental
 
 ### 🍰 Emprendimientos Inclusivos
+
+#### Panadería y Repostería
 - **Panadería VillaZam**: Panadería y repostería personalizada (Rosibel Villalobos Mena)
 - **Repostería Fina Boronitas**: Bocadillos y postres para toda ocasión (Jenny Porras)
 - **Sucucactus Paa'Macho**: Plantas ornamentales y manualidades recicladas (Jenny Rivera Rivera)
 - **Repostería La Bendición**: Postres para actividades festivas (Cristofer Ducan)
 - **Queque Navideño**: Deliciosos queques navideños (Catalina Flores Jiménez)
+
+#### Arte
+- **Artesanías Vini**: Venta de Vírgenes hechas artesanalmente (Marco Vinicio Molina Villalta)
+- **Art Sueños**: Creación de atrapasueños tejidos y pinturas personalizados (Marco Antonio Chacón Mora)
+- **Cora**: Elaboración de diseño de chorreadoras de café personalizadas (Fernando Rodríguez)
+- **Creaciones Jaclin**: Artículos para organización de fiestas y artículos comestibles (Jaclin Andrea Villalta López)
+- **La Tiendita de Jen**: Venta de ropa y accesorios, camisetas sublimadas (Jenny Rivera Rivera)
 
 ### 🏆 Logros Destacados
 - **Día Nacional de la Persona con Discapacidad**: Primera celebración organizada en Desamparados (2016)
@@ -161,6 +170,22 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.6.0 - Sección de Arte con Imágenes Reales
+- ✨ **Nuevo**: Sección completa de Arte con 5 emprendedores artísticos
+- 🖼️ **Actualizado**: Imágenes reales para todos los emprendedores de Arte:
+  * Artesanías Vini: Vini.jpg
+  * Art Sueños: Artsue.jpg
+  * Cora: cora.png
+  * Creaciones Jaclin: CreacionesJaclin.jpg
+  * La Tiendita de Jen: TiendaJen.jpg
+- 📱 **Nuevo**: Enlaces de WhatsApp funcionales para emprendedores de Arte
+- 📞 **Nuevo**: Números de teléfono visibles en cada tarjeta
+- 🎨 **Mejorado**: Diseño unificado entre secciones de Panadería y Arte
+- 📱 **Mejorado**: Estilos responsive para dispositivos móviles
+- 🔗 **Agregado**: Enlaces reales de contacto para emprendedores de Arte
+- 🎯 **Optimizado**: Iconos de WhatsApp simplificados (un solo icono por emprendedor)
+- 📱 **Mejorado**: Números de teléfono con diseño destacado
 
 ### v1.5.0 - Sección de Emprendimientos con Contactos Reales
 - ✨ **Nuevo**: Sección completa de Panadería y Repostería con 5 emprendedores
