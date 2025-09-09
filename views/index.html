@@ -288,14 +288,104 @@
                     impacto y llegar a más personas que necesitan nuestro apoyo. Juntos podemos construir 
                     un futuro donde la inclusión sea una realidad para todos.
                 </p>
-                <div class="support-buttons">
-                    <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
-                    <a href="contacto.html" class="btn btn-secondary">Haz tu Aporte</a>
+                
+                <div class="support-cards">
+                    <div class="support-card">
+                        <h3 class="support-title">Trabajo Comunal Universitario (TCU)</h3>
+                        <p class="support-description">
+                            Únete a nuestro programa de TCU y contribuye con tu conocimiento y tiempo 
+                            para fortalecer nuestros proyectos de inclusión.
+                        </p>
+                        <button class="btn btn-support" onclick="openModal('tcuModal')">Más Información</button>
+                    </div>
+                    
+                    <div class="support-card">
+                        <h3 class="support-title">Donativos</h3>
+                        <p class="support-description">
+                            Tu contribución económica nos ayuda a mantener nuestro sitio web, 
+                            organizar actividades y continuar con nuestros programas.
+                        </p>
+                        <button class="btn btn-support" onclick="openModal('donationsModal')">Más Información</button>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
+
+    <!-- Modal TCU -->
+    <div id="tcuModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Trabajo Comunal Universitario (TCU)</h2>
+                <span class="close" onclick="closeModal('tcuModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="../images/TCU.png" alt="TCU - Trabajo Comunal Universitario" class="modal-img">
+                </div>
+                <div class="modal-text">
+                    <p class="modal-description">
+                        <strong>Siempre son buenas las manos extra para ayudarnos a continuar con nuestro proyecto.</strong>
+                    </p>
+                    <p class="modal-info">
+                        Participa en nuestro programa de Trabajo Comunal Universitario y contribuye con tu 
+                        conocimiento y tiempo para fortalecer nuestros proyectos de inclusión. Trabajamos 
+                        con universidades para crear un impacto positivo en la comunidad.
+                    </p>
+                    <div class="contact-info">
+                        <h4>Contactanos por correo:</h4>
+                        <p class="email-contact">desampainclusivo@hotmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Donativos -->
+    <div id="donationsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Donativos</h2>
+                <span class="close" onclick="closeModal('donationsModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="../images/BN.png" alt="Donativos - Banco Nacional" class="modal-img">
+                </div>
+                <div class="modal-text">
+                    <p class="modal-description">
+                        <strong>Nunca está demás la ayuda monetaria para cubrir necesidades como el hosting de nuestro sitio web o bien alguna actividad patrocinada por la asociación.</strong>
+                    </p>
+                    <p class="modal-info">
+                        Podés hacer tus donaciones a nuestra cuenta del Banco Nacional:
+                    </p>
+                    <div class="donation-details">
+                        <div class="donation-item">
+                            <span class="donation-label">Cédula jurídica:</span>
+                            <span class="donation-value">4000001021</span>
+                        </div>
+                        <div class="donation-item">
+                            <span class="donation-label">Número de cuenta:</span>
+                            <span class="donation-value">100-01-172-000456-8</span>
+                        </div>
+                        <div class="donation-item">
+                            <span class="donation-label">Cuenta cliente:</span>
+                            <span class="donation-value">15117210010004560</span>
+                        </div>
+                        <div class="donation-item">
+                            <span class="donation-label">Cuenta IBAN:</span>
+                            <span class="donation-value">CR94 0151 1721 0010 0045 60</span>
+                        </div>
+                        <div class="donation-item">
+                            <span class="donation-label">SINPE móvil:</span>
+                            <span class="donation-value">8369 1359</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -307,5 +397,44 @@
 
     <!-- Scripts -->
     <script src="../server/main.js"></script>
+    
+    <!-- Modal Functions -->
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => {
+                    if (modal.style.display === 'flex') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

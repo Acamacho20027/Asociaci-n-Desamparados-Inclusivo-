@@ -79,6 +79,11 @@ Proyecto_ADI/
 - **Representación en Asamblea Nacional**: Luis Flores como representante de juventudes con discapacidad
 - **CAR SHOW INCLUSIVO**: Evento con carros adaptados y conductores con discapacidad
 
+### 🤝 Formas de Apoyo
+- **Trabajo Comunal Universitario (TCU)**: Programa para estudiantes universitarios
+- **Donativos**: Contribuciones económicas para mantener proyectos y actividades
+- **Información bancaria**: Cuenta del Banco Nacional con todos los datos necesarios
+
 ### Menú de Accesibilidad
 Haz clic en el botón ♿ en la esquina superior derecha para acceder a las opciones de accesibilidad:
 - **Contraste +**: Activar alto contraste
@@ -149,6 +154,16 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.4.0 - Sección de Apoyo con Modales Interactivos
+- ✨ **Nuevo**: Sección de apoyo con cards de TCU y Donativos
+- ✨ **Nuevo**: Modales interactivos para información detallada
+- 🎨 **Nuevo**: Modal de TCU con información del programa universitario
+- 💰 **Nuevo**: Modal de Donativos con información bancaria completa
+- 🖼️ **Actualizado**: Imágenes específicas para cada modal (TCU.png, BN.png)
+- 🎯 **Mejorado**: Botones con estilo unificado (blanco por defecto, azul en hover)
+- 📱 **Mejorado**: Modales responsive con animaciones suaves
+- 🔧 **Optimizado**: Funcionalidad de cierre con X, clic fuera o tecla Escape
 
 ### v1.3.0 - Actualización de Sección de Logros
 - ✨ **Nuevo**: Cards de logros con contenido específico y real
