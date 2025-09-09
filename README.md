@@ -10,6 +10,8 @@ Sitio web estático profesional para la Asociación Desampa Inclusivo, desarroll
 - **Menú de Accesibilidad**: Funcionalidades completas de accesibilidad web
 - **Diseño Profesional**: Interfaz limpia y moderna con fondo blanco y header azul
 - **Navegación Inteligente**: Detección automática de página activa
+- **Carrusel de Anuncios**: Sistema de carrusel interactivo para mostrar noticias
+- **Cards de Actividades**: Presentación visual atractiva de las actividades principales
 
 ### ♿ Accesibilidad
 - **Alto Contraste**: Modo de alto contraste para mejor visibilidad
@@ -59,12 +61,18 @@ Proyecto_ADI/
 3. ¡Listo! El sitio web está funcionando
 
 ### Navegación
-- **Inicio**: Página principal con información general
+- **Inicio**: Página principal con información general, carrusel de anuncios y actividades
 - **Emprendimientos**: Programa de emprendimientos inclusivos
 - **Videos Tutoriales**: Contenido educativo accesible
 - **Ya! Danza**: Programa de danza inclusiva
 - **Deportes Adaptados**: Actividades deportivas adaptadas
 - **Contacto**: Información de contacto y formulario
+
+### 🎭 Actividades Principales
+- **Charlas**: Espacios de diálogo sobre inclusión y derechos
+- **Ya!Danza**: Programa de danza inclusiva y expresión artística
+- **Cuerpos Libres**: Iniciativa de aceptación corporal y diversidad
+- **Reportajes**: Producción de contenido audiovisual documental
 
 ### Menú de Accesibilidad
 Haz clic en el botón ♿ en la esquina superior derecha para acceder a las opciones de accesibilidad:
@@ -134,6 +142,30 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 ## 📄 Licencia
 
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
+
+## 📝 Changelog
+
+### v1.2.0 - Actualización de Actividades y Anuncios
+- ✨ **Nuevo**: Carrusel de anuncios con imágenes específicas
+- ✨ **Nuevo**: Cards de actividades con diseño mejorado
+- ✨ **Nuevo**: Sección de Reportajes con enlaces organizados por año
+- 🎨 **Mejorado**: Layout de dos columnas para la card de Reportajes
+- 🖼️ **Actualizado**: Imágenes específicas para cada actividad
+- 📱 **Mejorado**: Diseño responsive para las nuevas cards
+- 🔗 **Agregado**: Enlaces a medios de comunicación (2023, 2019, 2018)
+
+### v1.1.0 - Funcionalidades de Accesibilidad
+- ♿ **Nuevo**: Menú completo de accesibilidad
+- 🎨 **Nuevo**: Modo de alto contraste
+- 📝 **Nuevo**: Ajuste de tamaño de fuente
+- 🔗 **Nuevo**: Resaltado de enlaces
+- 📱 **Nuevo**: Diseño responsive completo
+
+### v1.0.0 - Versión Inicial
+- 🚀 **Nuevo**: Sitio web base con HTML, CSS y JavaScript
+- 📄 **Nuevo**: Páginas principales (Inicio, Emprendimientos, Videos, Danza, Deportes, Contacto)
+- 🎨 **Nuevo**: Diseño profesional con paleta de colores azul
+- 📱 **Nuevo**: Navegación responsive
 
 ---
 
