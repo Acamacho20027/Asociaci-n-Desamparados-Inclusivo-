@@ -121,28 +121,44 @@ body.no-animations * {
   text-decoration: none;
   color: #ffffff;
   transition: all var(--transition-fast);
-  min-width: 200px;
+  min-width: 80px;
+  margin-right: var(--spacing-xl);
 }
 
 .logo-image {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  font-size: var(--font-size-xl);
-  color: white;
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
   transition: all var(--transition-fast);
-  margin-right: var(--spacing-md);
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .logo-image:hover {
-  transform: rotate(5deg);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Fallback para cuando la imagen no se carga */
+.logo-image:not([src]),
+.logo-image[src=""],
+.logo-image[src*="undefined"] {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  font-weight: bold;
+  font-size: var(--font-size-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image:not([src])::after,
+.logo-image[src=""]::after,
+.logo-image[src*="undefined"]::after {
+  content: "ADI";
 }
 
 .logo:hover {
@@ -150,25 +166,6 @@ body.no-animations * {
 }
 
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-title {
-  font-size: var(--font-size-xl);
-  font-weight: 700;
-  margin-bottom: var(--spacing-xs);
-  color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.logo-subtitle {
-  font-size: var(--font-size-small);
-  opacity: 0.9;
-  color: #e5e7eb;
-  font-weight: 400;
-}
 
 .nav-links {
   display: flex;
@@ -491,6 +488,7 @@ body.custom-cursor {
   .logo {
     position: static;
     margin-bottom: var(--spacing-sm);
+    margin-right: 0;
   }
   
   .nav-links {
