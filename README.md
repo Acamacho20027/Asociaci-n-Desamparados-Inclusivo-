@@ -67,6 +67,7 @@ Proyecto_ADI/
 - **Ya! Danza**: Redirección a sitio externo (https://yadanza.desampainclusivo.com)
 - **Deportes Adaptados**: Programa de deportes adaptados con Esgrima, Ping Pong y Basketball
 - **Contacto**: Información de contacto, redes sociales, mapa interactivo y formulario funcional
+- **Mensajes Interactivos**: Información detallada de TCU y Donativos con diseño elegante
 
 ### 🎭 Actividades Principales
 - **Charlas**: Espacios de diálogo sobre inclusión y derechos
@@ -163,8 +164,28 @@ Proyecto_ADI/
 
 ### 🤝 Formas de Apoyo
 - **Trabajo Comunal Universitario (TCU)**: Programa para estudiantes universitarios
+  - Mensaje interactivo con información completa del programa
+  - Logo colorido y descripción detallada
+  - Información de contacto por correo electrónico
 - **Donativos**: Contribuciones económicas para mantener proyectos y actividades
-- **Información bancaria**: Cuenta del Banco Nacional con todos los datos necesarios
+  - Mensaje elegante con logo del Banco Nacional
+  - Información bancaria completa y organizada
+  - Datos de cuenta, cédula jurídica, IBAN y SINPE móvil
+
+### 💬 Mensajes de Información Interactivos
+- **Diseño moderno**: Mensajes elegantes con animaciones suaves
+- **Centrado perfecto**: Posicionamiento vertical y horizontal optimizado
+- **Tamaño compacto**: 600px máximo de ancho, 80% de la pantalla
+- **Imágenes integradas**: Logos de TCU y Banco Nacional incluidos
+- **Información completa**: Sin truncamiento de texto o scrollbars
+- **Interactividad mejorada**: 
+  - Scroll suave al centro de la pantalla
+  - Cierre con botón X circular
+  - Cierre con tecla Escape
+  - Hover effects en botones
+- **Responsive perfecto**: Adaptación automática a móviles y escritorio
+- **Header elegante**: Gradiente azul con título y botón de cerrar
+- **Contenido organizado**: Layout horizontal con imagen y texto
 
 ### Menú de Accesibilidad
 Haz clic en el botón ⚙ en la esquina inferior izquierda para acceder a las opciones de accesibilidad:
@@ -240,6 +261,18 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.11.6 - Reemplazo de Modales con Mensajes Bonitos y Elegantes
+- 🎨 **Nuevo diseño**: Reemplazo de modales problemáticos con mensajes elegantes
+- ✨ **Animaciones suaves**: Fade in del overlay y slide up del contenido
+- 🎯 **Centrado perfecto**: Mensajes centrados vertical y horizontalmente en la pantalla
+- 📱 **Responsive optimizado**: Diseño compacto y funcional en todos los dispositivos
+- 🖼️ **Imágenes integradas**: Logo TCU y BN integrados en el diseño
+- 📧 **Información completa**: Email y datos bancarios sin truncamiento
+- 🎨 **Header elegante**: Gradiente azul con título y botón de cerrar circular
+- 📏 **Tamaño compacto**: Mensajes de 600px máximo, 80% de ancho
+- 🖱️ **Interactividad mejorada**: Cierre con botón X, tecla Escape y scroll suave
+- 🎭 **Experiencia profesional**: Diseño moderno sin scrollbars problemáticos
 
 ### v1.11.5 - Reubicación del Menú de Accesibilidad y Actualización de Icono
 - 📍 **Reubicado**: Botón de accesibilidad movido a esquina inferior izquierda

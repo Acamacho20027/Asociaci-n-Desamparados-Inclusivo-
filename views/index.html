@@ -296,7 +296,7 @@
                             Únete a nuestro programa de TCU y contribuye con tu conocimiento y tiempo 
                             para fortalecer nuestros proyectos de inclusión.
                         </p>
-                        <button class="btn btn-support" onclick="openModal('tcuModal')">Más Información</button>
+                        <button class="btn btn-support" onclick="showTCUMessage()">Más Información</button>
                     </div>
                     
                     <div class="support-card">
@@ -305,7 +305,7 @@
                             Tu contribución económica nos ayuda a mantener nuestro sitio web, 
                             organizar actividades y continuar con nuestros programas.
                         </p>
-                        <button class="btn btn-support" onclick="openModal('donationsModal')">Más Información</button>
+                        <button class="btn btn-support" onclick="showDonationsMessage()">Más Información</button>
                     </div>
                 </div>
             </div>
@@ -313,22 +313,22 @@
 
     </main>
 
-    <!-- Modal TCU -->
-    <div id="tcuModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Trabajo Comunal Universitario (TCU)</h2>
-                <span class="close" onclick="closeModal('tcuModal')">&times;</span>
+    <!-- Mensaje TCU -->
+    <div id="tcuMessage" class="info-message" style="display: none;">
+        <div class="message-content">
+            <div class="message-header">
+                <h3 class="message-title">Trabajo Comunal Universitario (TCU)</h3>
+                <button class="message-close" onclick="hideTCUMessage()">&times;</button>
             </div>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <img src="../images/TCU.png" alt="TCU - Trabajo Comunal Universitario" class="modal-img">
+            <div class="message-body">
+                <div class="message-image">
+                    <img src="../images/TCU.png" alt="TCU - Trabajo Comunal Universitario" class="message-img">
                 </div>
-                <div class="modal-text">
-                    <p class="modal-description">
+                <div class="message-text">
+                    <p class="message-description">
                         <strong>Siempre son buenas las manos extra para ayudarnos a continuar con nuestro proyecto.</strong>
                     </p>
-                    <p class="modal-info">
+                    <p class="message-info">
                         Participa en nuestro programa de Trabajo Comunal Universitario y contribuye con tu 
                         conocimiento y tiempo para fortalecer nuestros proyectos de inclusión. Trabajamos 
                         con universidades para crear un impacto positivo en la comunidad.
@@ -342,22 +342,22 @@
         </div>
     </div>
 
-    <!-- Modal Donativos -->
-    <div id="donationsModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Donativos</h2>
-                <span class="close" onclick="closeModal('donationsModal')">&times;</span>
+    <!-- Mensaje Donativos -->
+    <div id="donationsMessage" class="info-message" style="display: none;">
+        <div class="message-content">
+            <div class="message-header">
+                <h3 class="message-title">Donativos</h3>
+                <button class="message-close" onclick="hideDonationsMessage()">&times;</button>
             </div>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <img src="../images/BN.png" alt="Donativos - Banco Nacional" class="modal-img">
+            <div class="message-body">
+                <div class="message-image">
+                    <img src="../images/BN.png" alt="Donativos - Banco Nacional" class="message-img">
                 </div>
-                <div class="modal-text">
-                    <p class="modal-description">
+                <div class="message-text">
+                    <p class="message-description">
                         <strong>Nunca está demás la ayuda monetaria para cubrir necesidades como el hosting de nuestro sitio web o bien alguna actividad patrocinada por la asociación.</strong>
                     </p>
-                    <p class="modal-info">
+                    <p class="message-info">
                         Podés hacer tus donaciones a nuestra cuenta del Banco Nacional:
                     </p>
                     <div class="donation-details">
@@ -398,39 +398,37 @@
     <!-- Scripts -->
     <script src="../server/main.js"></script>
     
-    <!-- Modal Functions -->
+    <!-- Message Functions -->
     <script>
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
+        function showTCUMessage() {
+            const message = document.getElementById('tcuMessage');
+            message.style.display = 'block';
+            message.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
-        function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
+        function hideTCUMessage() {
+            const message = document.getElementById('tcuMessage');
+            message.style.display = 'none';
         }
 
-        // Cerrar modal al hacer clic fuera del contenido
-        window.onclick = function(event) {
-            const modals = document.querySelectorAll('.modal');
-            modals.forEach(modal => {
-                if (event.target === modal) {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            });
+        function showDonationsMessage() {
+            const message = document.getElementById('donationsMessage');
+            message.style.display = 'block';
+            message.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
-        // Cerrar modal con tecla Escape
+        function hideDonationsMessage() {
+            const message = document.getElementById('donationsMessage');
+            message.style.display = 'none';
+        }
+
+        // Cerrar mensaje con tecla Escape
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {
-                const modals = document.querySelectorAll('.modal');
-                modals.forEach(modal => {
-                    if (modal.style.display === 'flex') {
-                        modal.style.display = 'none';
-                        document.body.style.overflow = 'auto';
+                const messages = document.querySelectorAll('.info-message');
+                messages.forEach(message => {
+                    if (message.style.display === 'block') {
+                        message.style.display = 'none';
                     }
                 });
             }
