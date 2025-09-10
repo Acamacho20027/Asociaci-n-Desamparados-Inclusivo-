@@ -121,8 +121,7 @@ Proyecto_ADI/
 #### Panadería y Repostería
 - **Panadería VillaZam**: Panadería y repostería personalizada (Rosibel Villalobos Mena)
 - **Repostería Fina Boronitas**: Bocadillos y postres para toda ocasión (Jenny Porras)
-- **Sucucactus Paa'Macho**: Plantas ornamentales y manualidades recicladas (Jenny Rivera Rivera)
-- **Repostería La Bendición**: Postres para actividades festivas (Cristofer Ducan)
+- **Repostería La Bendición**: Postres para actividades festivas (Cristofer Ducan) - WhatsApp: 7096 9138
 - **Queque Navideño**: Deliciosos queques navideños (Catalina Flores Jiménez)
 
 #### Arte
@@ -130,6 +129,7 @@ Proyecto_ADI/
 - **Art Sueños**: Creación de atrapasueños tejidos y pinturas personalizados (Marco Antonio Chacón Mora)
 - **Cora**: Elaboración de diseño de chorreadoras de café personalizadas (Fernando Rodríguez)
 - **Creaciones Jaclin**: Artículos para organización de fiestas y artículos comestibles (Jaclin Andrea Villalta López)
+- **Sucucactus Paa'Macho**: Plantas ornamentales y manualidades recicladas (Jenny Rivera Rivera)
 - **La Tiendita de Jen**: Venta de ropa y accesorios, camisetas sublimadas (Jenny Rivera Rivera)
 
 #### Belleza
@@ -223,6 +223,16 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.11.2 - Reorganización y Actualización de Emprendimientos
+- 🔄 **Reorganizado**: Sucucactus Paa'Macho movido de Panadería a sección de Arte
+- 🔗 **Actualizado**: Enlace de Facebook de Sucucactus Paa'Macho a https://www.facebook.com/Artesaniaspamacho
+- ❌ **Eliminado**: Icono de WhatsApp de Sucucactus Paa'Macho
+- 🔗 **Actualizado**: Enlace de Facebook de Repostería La Bendición a https://www.facebook.com/PasteleriaBendicion
+- 📱 **Actualizado**: Número de WhatsApp de Repostería La Bendición a 7096 9138
+- 📞 **Agregado**: Número de teléfono visible en tarjeta de Repostería La Bendición
+- 🎯 **Mejorado**: Mejor categorización de emprendimientos por tipo de actividad
+- 📱 **Mejorado**: Contactos actualizados con enlaces funcionales
 
 ### v1.11.1 - Mejoras en Diseño de Contacto y Horarios
 - 🎨 **Mejorado**: Integración de horarios en card de dirección para diseño más compacto
