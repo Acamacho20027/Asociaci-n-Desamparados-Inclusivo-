@@ -11,7 +11,8 @@ class AccessibilityManager {
       images: true,
       dyslexia: false,
       cursor: 'normal',
-      lineHeight: 'normal'
+      lineHeight: 'normal',
+      saturation: 'normal'
     };
     
     this.init();
@@ -29,7 +30,7 @@ class AccessibilityManager {
       <div class="accessibility-menu" id="accessibilityMenu">
         <button class="accessibility-btn" data-action="contrast">
           <i>🌓</i>
-          <span>Contraste +</span>
+          <span>Contraste</span>
         </button>
         <button class="accessibility-btn" data-action="highlightLinks">
           <i>🔗</i>
@@ -66,6 +67,10 @@ class AccessibilityManager {
         <button class="accessibility-btn" data-action="lineHeight">
           <i>📏</i>
           <span>Altura de la línea</span>
+        </button>
+        <button class="accessibility-btn" data-action="saturation">
+          <i>🎨</i>
+          <span>Saturación</span>
         </button>
         <button class="accessibility-btn" data-action="reset">
           <i>🔄</i>
@@ -158,6 +163,9 @@ class AccessibilityManager {
       case 'lineHeight':
         this.toggleLineHeight();
         break;
+      case 'saturation':
+        this.toggleSaturation();
+        break;
       case 'info':
         this.showInfo();
         break;
@@ -171,7 +179,9 @@ class AccessibilityManager {
   }
 
   toggleContrast() {
-    this.settings.contrast = this.settings.contrast === 'normal' ? 'high' : 'normal';
+    const contrasts = ['normal', 'high', 'extra-high'];
+    const currentIndex = contrasts.indexOf(this.settings.contrast);
+    this.settings.contrast = contrasts[(currentIndex + 1) % contrasts.length];
     this.applySettings();
   }
 
@@ -208,7 +218,9 @@ class AccessibilityManager {
   }
 
   toggleCursor() {
-    this.settings.cursor = this.settings.cursor === 'normal' ? 'custom' : 'normal';
+    const cursors = ['normal', 'large', 'extra-large'];
+    const currentIndex = cursors.indexOf(this.settings.cursor);
+    this.settings.cursor = cursors[(currentIndex + 1) % cursors.length];
     this.applySettings();
   }
 
@@ -217,17 +229,131 @@ class AccessibilityManager {
     this.applySettings();
   }
 
+  toggleSaturation() {
+    const saturations = ['normal', 'low', 'high'];
+    const currentIndex = saturations.indexOf(this.settings.saturation);
+    this.settings.saturation = saturations[(currentIndex + 1) % saturations.length];
+    this.applySettings();
+  }
+
   showInfo() {
-    alert(`Configuración actual:
-• Tamaño de fuente: ${this.settings.fontSize}
-• Contraste: ${this.settings.contrast}
-• Resaltar enlaces: ${this.settings.highlightLinks ? 'Sí' : 'No'}
-• Espaciado: ${this.settings.spacing}
-• Animaciones: ${this.settings.animations ? 'Sí' : 'No'}
-• Imágenes: ${this.settings.images ? 'Mostrar' : 'Ocultar'}
-• Dislexia: ${this.settings.dyslexia ? 'Sí' : 'No'}
-• Cursor: ${this.settings.cursor}
-• Altura de línea: ${this.settings.lineHeight}`);
+    this.createInfoModal();
+  }
+
+  createInfoModal() {
+    // Crear el modal si no existe
+    let modal = document.getElementById('accessibilityInfoModal');
+    if (!modal) {
+      modal = document.createElement('div');
+      modal.id = 'accessibilityInfoModal';
+      modal.className = 'modal-overlay';
+      modal.innerHTML = `
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <h3 class="modal-title">Configuración de Accesibilidad</h3>
+            <button class="close" id="closeInfoModal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="settings-grid">
+              <div class="setting-item">
+                <span class="setting-label">Tamaño de fuente:</span>
+                <span class="setting-value">${this.settings.fontSize}</span>
+              </div>
+              <div class="setting-item">
+                <span class="setting-label">Contraste:</span>
+                <span class="setting-value">${this.settings.contrast}</span>
+              </div>
+              <div class="setting-item">
+                <span class="setting-label">Resaltar enlaces:</span>
+                <span class="setting-value">${this.settings.highlightLinks ? 'Sí' : 'No'}</span>
+              </div>
+              <div class="setting-item">
+                <span class="setting-label">Espaciado:</span>
+                <span class="setting-value">${this.settings.spacing}</span>
+              </div>
+              <div class="setting-item">
+                <span class="setting-label">Animaciones:</span>
+                <span class="setting-value">${this.settings.animations ? 'Sí' : 'No'}</span>
+              </div>
+              <div class="setting-item">
+                <span class="setting-label">Imágenes:</span>
+                <span class="setting-value">${this.settings.images ? 'Mostrar' : 'Ocultar'}</span>
+              </div>
+              <div class="setting-item">
+                <span class="setting-label">Apto para dislexia:</span>
+                <span class="setting-value">${this.settings.dyslexia ? 'Sí' : 'No'}</span>
+              </div>
+              <div class="setting-item">
+                <span class="setting-label">Cursor:</span>
+                <span class="setting-value">${this.settings.cursor}</span>
+              </div>
+              <div class="setting-item">
+                <span class="setting-label">Altura de línea:</span>
+                <span class="setting-value">${this.settings.lineHeight}</span>
+              </div>
+              <div class="setting-item">
+                <span class="setting-label">Saturación:</span>
+                <span class="setting-value">${this.settings.saturation}</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" id="closeInfoModalBtn">Entendido</button>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+    }
+
+    // Actualizar los valores
+    modal.querySelectorAll('.setting-value').forEach((el, index) => {
+      const values = [
+        this.settings.fontSize,
+        this.settings.contrast,
+        this.settings.highlightLinks ? 'Sí' : 'No',
+        this.settings.spacing,
+        this.settings.animations ? 'Sí' : 'No',
+        this.settings.images ? 'Mostrar' : 'Ocultar',
+        this.settings.dyslexia ? 'Sí' : 'No',
+        this.settings.cursor,
+        this.settings.lineHeight,
+        this.settings.saturation
+      ];
+      el.textContent = values[index];
+    });
+
+    // Mostrar el modal
+    modal.classList.add('show');
+
+    // Event listeners para cerrar
+    const closeBtn = modal.querySelector('#closeInfoModal');
+    const closeBtn2 = modal.querySelector('#closeInfoModalBtn');
+    
+    const closeModal = () => {
+      modal.classList.remove('show');
+    };
+
+    closeBtn.addEventListener('click', closeModal);
+    closeBtn2.addEventListener('click', closeModal);
+
+    // Cerrar al hacer clic fuera del modal
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Cerrar con tecla Escape
+    const escapeHandler = (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+        document.removeEventListener('keydown', escapeHandler);
+      }
+    };
+    document.addEventListener('keydown', escapeHandler);
   }
 
   resetSettings() {
@@ -241,7 +367,8 @@ class AccessibilityManager {
       images: true,
       dyslexia: false,
       cursor: 'normal',
-      lineHeight: 'normal'
+      lineHeight: 'normal',
+      saturation: 'normal'
     };
     this.applySettings();
   }
@@ -250,11 +377,13 @@ class AccessibilityManager {
     const body = document.body;
     
     // Resetear todas las clases
-    body.className = body.className.replace(/high-contrast|large-text|dyslexia-friendly|highlight-links|increased-spacing|no-animations|hide-images|custom-cursor|increased-line-height/g, '').trim();
+    body.className = body.className.replace(/high-contrast|extra-high-contrast|large-text|dyslexia-friendly|highlight-links|increased-spacing|no-animations|hide-images|large-cursor|extra-large-cursor|increased-line-height|low-saturation|high-saturation/g, '').trim();
     
     // Aplicar configuraciones
     if (this.settings.contrast === 'high') {
       body.classList.add('high-contrast');
+    } else if (this.settings.contrast === 'extra-high') {
+      body.classList.add('high-contrast', 'extra-high-contrast');
     }
     
     if (this.settings.fontSize === 'large') {
@@ -284,12 +413,20 @@ class AccessibilityManager {
       body.classList.add('dyslexia-friendly');
     }
     
-    if (this.settings.cursor === 'custom') {
-      body.classList.add('custom-cursor');
+    if (this.settings.cursor === 'large') {
+      body.classList.add('large-cursor');
+    } else if (this.settings.cursor === 'extra-large') {
+      body.classList.add('large-cursor', 'extra-large-cursor');
     }
     
     if (this.settings.lineHeight === 'increased') {
       body.classList.add('increased-line-height');
+    }
+    
+    if (this.settings.saturation === 'low') {
+      body.classList.add('low-saturation');
+    } else if (this.settings.saturation === 'high') {
+      body.classList.add('high-saturation');
     }
   }
 
@@ -300,7 +437,7 @@ class AccessibilityManager {
       
       switch (action) {
         case 'contrast':
-          isActive = this.settings.contrast === 'high';
+          isActive = this.settings.contrast !== 'normal';
           break;
         case 'highlightLinks':
           isActive = this.settings.highlightLinks;
@@ -321,10 +458,13 @@ class AccessibilityManager {
           isActive = this.settings.dyslexia;
           break;
         case 'cursor':
-          isActive = this.settings.cursor === 'custom';
+          isActive = this.settings.cursor !== 'normal';
           break;
         case 'lineHeight':
           isActive = this.settings.lineHeight === 'increased';
+          break;
+        case 'saturation':
+          isActive = this.settings.saturation !== 'normal';
           break;
       }
       

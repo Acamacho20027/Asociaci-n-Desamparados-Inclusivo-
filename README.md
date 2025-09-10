@@ -14,15 +14,16 @@ Sitio web estático profesional para la Asociación Desampa Inclusivo, desarroll
 - **Cards de Actividades**: Presentación visual atractiva de las actividades principales
 
 ### ♿ Accesibilidad
-- **Alto Contraste**: Modo de alto contraste para mejor visibilidad
+- **Contraste**: 3 niveles de contraste (normal, alto, extra alto) para mejor visibilidad
 - **Tamaño de Fuente**: Ajuste de tamaño de texto (normal, grande, extra grande)
 - **Resaltado de Enlaces**: Opción para resaltar todos los enlaces
 - **Espaciado de Texto**: Aumento del espaciado entre letras y palabras
 - **Animaciones**: Control para detener animaciones
 - **Imágenes**: Opción para ocultar imágenes
 - **Fuente Dislexia**: Fuente especial para personas con dislexia
-- **Cursor Personalizado**: Opciones de cursor personalizado
+- **Cursor Personalizado**: 3 tamaños de cursor (normal, grande, extra grande)
 - **Altura de Línea**: Ajuste de la altura de línea del texto
+- **Saturación**: Control de intensidad de colores (normal, baja, alta)
 
 ### 📱 Responsive Design
 - **Mobile First**: Diseño optimizado para dispositivos móviles
@@ -190,16 +191,17 @@ Proyecto_ADI/
 
 ### Menú de Accesibilidad
 Haz clic en el botón ⚙ en la esquina inferior izquierda para acceder a las opciones de accesibilidad:
-- **Contraste +**: Activar alto contraste
+- **Contraste**: 3 niveles de contraste (normal → alto → extra alto)
 - **Resaltar enlaces**: Resaltar todos los enlaces
-- **Agrandar texto**: Aumentar tamaño de fuente
-- **Espaciado de texto**: Aumentar espaciado
+- **Agrandar texto**: Aumentar tamaño de fuente (normal → grande → extra grande)
+- **Espaciado de texto**: Aumentar espaciado entre letras y palabras
 - **Detener animaciones**: Desactivar animaciones
 - **Ocultar Imágenes**: Ocultar todas las imágenes
 - **Apto para dislexia**: Cambiar a fuente especial
-- **Cursor**: Activar cursor personalizado
-- **Información**: Ver configuración actual
-- **Altura de la línea**: Ajustar altura de línea
+- **Cursor**: 3 tamaños de cursor (normal → grande → extra grande)
+- **Información**: Ver configuración actual en modal elegante
+- **Altura de la línea**: Ajustar altura de línea del texto
+- **Saturación**: Control de intensidad de colores (normal → baja → alta)
 - **Resetear**: Restaurar configuración por defecto
 
 ## 🎨 Personalización
@@ -262,6 +264,18 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.11.7 - Mejoras en Menú de Accesibilidad y Nueva Funcionalidad de Saturación
+- 🎨 **Mejorado**: Modal de información de accesibilidad con diseño más compacto y ancho
+- 🖱️ **Mejorado**: Botón de cerrar (X) rediseñado con forma circular y efectos hover
+- 🎨 **Nuevo**: Funcionalidad de saturación con 3 niveles (normal, baja, alta)
+- 🖱️ **Mejorado**: Cursor personalizado con 3 tamaños (normal, grande, extra grande)
+- 🎨 **Mejorado**: Contraste con 3 niveles (normal, alto, extra alto)
+- 📏 **Corregido**: Funcionalidad de altura de línea que no funcionaba
+- 🎯 **Mejorado**: Centrado perfecto del texto en modal de información
+- 🔧 **Corregido**: Saturación solo afecta contenido principal, no controles de accesibilidad
+- 📱 **Mejorado**: Layout de 2 columnas en modal de información para mejor organización
+- ✨ **Mejorado**: Experiencia de usuario más pulida y profesional
 
 ### v1.11.6 - Reemplazo de Modales con Mensajes Bonitos y Elegantes
 - 🎨 **Nuevo diseño**: Reemplazo de modales problemáticos con mensajes elegantes
