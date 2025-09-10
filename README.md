@@ -64,7 +64,7 @@ Proyecto_ADI/
 - **Inicio**: Página principal con información general, carrusel de anuncios y actividades
 - **Emprendimientos**: Programa de emprendimientos inclusivos (Panadería, Arte, Belleza, Tecnología)
 - **Videos Tutoriales**: Contenido educativo accesible con tutoriales de tecnología
-- **Ya! Danza**: Programa de danza inclusiva
+- **Ya! Danza**: Redirección a sitio externo (https://yadanza.desampainclusivo.com)
 - **Deportes Adaptados**: Actividades deportivas adaptadas
 - **Contacto**: Información de contacto y formulario
 
@@ -194,6 +194,13 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.9.1 - Redirección de Ya! Danza a Sitio Externo
+- 🔗 **Actualizado**: Enlace "Ya! Danza" ahora redirige a sitio externo
+- 🌐 **Nuevo**: Redirección directa a https://yadanza.desampainclusivo.com
+- 🆕 **Nuevo**: Apertura en nueva pestaña con target="_blank"
+- 📄 **Actualizado**: Todos los archivos HTML con enlace externo consistente
+- 🎯 **Mejorado**: Navegación optimizada para sitio de danza independiente
 
 ### v1.9.0 - Sección de Videos Tutoriales con Calidad HD
 - ✨ **Nuevo**: Sección completa de Videos Tutoriales con 6 tutoriales
