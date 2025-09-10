@@ -224,6 +224,16 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 
 ## 📝 Changelog
 
+### v1.11.1 - Mejoras en Diseño de Contacto y Horarios
+- 🎨 **Mejorado**: Integración de horarios en card de dirección para diseño más compacto
+- 🔵 **Actualizado**: Color azul (#2563eb) para título "Horarios de Atención" e icono de reloj
+- ⚫ **Actualizado**: Color negro (#000000) para "Asociación Desampa Inclusivo"
+- 📏 **Mejorado**: Separación visual con línea divisoria entre dirección y horarios
+- ❌ **Eliminado**: Card separada de horarios para diseño unificado
+- 🎯 **Optimizado**: Layout más limpio con información de ubicación y horarios integrada
+- 🎨 **Mejorado**: Consistencia de colores con esquema del sitio
+- 📱 **Mejorado**: Mejor jerarquía visual en card de ubicación
+
 ### v1.11.0 - Actualización Completa de Página de Contacto
 - ✨ **Nuevo**: Página de contacto completamente renovada con información actualizada
 - 📍 **Actualizado**: Dirección real: San José, Desamparados. Del cementerio 500 metros Sur y 50 metros al Oeste
