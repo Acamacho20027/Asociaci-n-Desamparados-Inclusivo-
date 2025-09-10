@@ -65,7 +65,7 @@ Proyecto_ADI/
 - **Emprendimientos**: Programa de emprendimientos inclusivos (Panadería, Arte, Belleza, Tecnología)
 - **Videos Tutoriales**: Contenido educativo accesible con tutoriales de tecnología
 - **Ya! Danza**: Redirección a sitio externo (https://yadanza.desampainclusivo.com)
-- **Deportes Adaptados**: Actividades deportivas adaptadas
+- **Deportes Adaptados**: Programa de deportes adaptados con Esgrima, Ping Pong y Basketball
 - **Contacto**: Información de contacto y formulario
 
 ### 🎭 Actividades Principales
@@ -90,6 +90,31 @@ Proyecto_ADI/
 - **Descripción de Audio**: Videos con descripción para personas con discapacidad visual
 - **Calidad HD**: Miniaturas de alta calidad (hasta 1280x720)
 - **Reproducción Optimizada**: Carga bajo demanda para mejor rendimiento
+
+### 🏅 Deportes Adaptados
+
+#### Disciplinas Disponibles
+- **Esgrima Adaptado**: Disciplina de estrategia y precisión con horarios específicos
+  - Lunes: 9:00 am a 11:00 am
+  - Jueves: 6:30 pm a 8:30 pm  
+  - Sábados: 1:00 pm a 3:00 pm
+  - Lugar: Sala de Esgrima, Gimnasio Nacional
+  - Incluye galería de imágenes y video educativo
+- **Ping Pong Adaptado**: Tenis de mesa adaptado con equipamiento especializado
+  - Mejora coordinación, concentración y reflejos
+  - Equipamiento adaptado según necesidades específicas
+  - Niveles desde principiantes hasta competencia
+- **Basketball Adaptado**: Baloncesto adaptado para silla de ruedas y de pie
+  - Modalidades: Silla de ruedas y de pie adaptado
+  - Beneficios: Fuerza, resistencia y trabajo en equipo
+  - Competencias: Ligas locales y nacionales
+
+#### Características del Programa
+- **Imágenes de Alta Calidad**: Visualización completa sin recortes
+- **Video Educativo**: Contenido multimedia para Esgrima Adaptado
+- **Horarios Detallados**: Información clara de días y horarios
+- **Diseño Responsive**: Adaptable a todos los dispositivos
+- **Información Profesional**: Descripciones detalladas de cada disciplina
 
 ### 🍰 Emprendimientos Inclusivos
 
@@ -194,6 +219,18 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.10.0 - Sección de Deportes Adaptados Renovada
+- 🏅 **Nuevo**: Sección completa de Deportes Adaptados con 3 disciplinas
+- ⚔️ **Nuevo**: Esgrima Adaptado con galería de imágenes, video y horarios detallados
+- 🏓 **Nuevo**: Ping Pong Adaptado con imagen completa y descripción profesional
+- 🏀 **Nuevo**: Basketball Adaptado con imagen completa y información detallada
+- 🖼️ **Mejorado**: Imágenes optimizadas para visualización completa sin recortes
+- 📱 **Mejorado**: Diseño responsive con galería adaptativa
+- 🎥 **Nuevo**: Video educativo integrado para Esgrima Adaptado
+- 📅 **Nuevo**: Horarios específicos y lugar de práctica para Esgrima
+- 🧹 **Limpieza**: Eliminadas secciones redundantes (Entrenadores, Competencias, Testimonios, CTA)
+- 📚 **Actualizado**: README con documentación completa de deportes adaptados
 
 ### v1.9.1 - Redirección de Ya! Danza a Sitio Externo
 - 🔗 **Actualizado**: Enlace "Ya! Danza" ahora redirige a sitio externo
