@@ -2708,14 +2708,14 @@ body.custom-cursor {
 .donation-label {
   font-weight: 600;
   color: var(--text-color);
-  font-size: var(--font-size-base);
+  font-size: 0.8rem;
 }
 
 .donation-value {
   font-family: 'Courier New', monospace;
   font-weight: 600;
   color: var(--secondary-color);
-  font-size: var(--font-size-sm);
+  font-size: 0.75rem;
   background: #ffffff;
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: 6px;

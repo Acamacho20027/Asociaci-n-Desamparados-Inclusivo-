@@ -178,6 +178,7 @@ Proyecto_ADI/
 - **Tamaño compacto**: 600px máximo de ancho, 80% de la pantalla
 - **Imágenes integradas**: Logos de TCU y Banco Nacional incluidos
 - **Información completa**: Sin truncamiento de texto o scrollbars
+- **Números optimizados**: Cuentas bancarias con tamaño reducido (0.75rem) para mejor proporción
 - **Interactividad mejorada**: 
   - Scroll suave al centro de la pantalla
   - Cierre con botón X circular
@@ -273,6 +274,7 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 - 📏 **Tamaño compacto**: Mensajes de 600px máximo, 80% de ancho
 - 🖱️ **Interactividad mejorada**: Cierre con botón X, tecla Escape y scroll suave
 - 🎭 **Experiencia profesional**: Diseño moderno sin scrollbars problemáticos
+- 🔢 **Números optimizados**: Tamaño reducido de cuentas bancarias para mejor proporción
 
 ### v1.11.5 - Reubicación del Menú de Accesibilidad y Actualización de Icono
 - 📍 **Reubicado**: Botón de accesibilidad movido a esquina inferior izquierda
