@@ -450,14 +450,90 @@ class FormManager {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
     
-    // Simular envío de formulario
-    console.log('Datos del formulario:', data);
+    // Validar datos requeridos
+    if (!data.nombre || !data.email || !data.mensaje) {
+      alert('Por favor, completa todos los campos obligatorios.');
+      return;
+    }
     
-    // Mostrar mensaje de confirmación
-    alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+    // Crear el contenido del email
+    const emailContent = this.createEmailContent(data);
+    
+    // Enviar email usando mailto
+    this.sendEmail(emailContent);
+    
+    // Mostrar modal de confirmación
+    this.showModal();
     
     // Limpiar formulario
     form.reset();
+  }
+
+  createEmailContent(data) {
+    const subject = `Nuevo mensaje de contacto - ${data.asunto || 'Consulta general'}`;
+    
+    const body = `
+Nuevo mensaje recibido desde el sitio web de la Asociación Desampa Inclusivo:
+
+DATOS DEL CONTACTO:
+- Nombre: ${data.nombre}
+- Email: ${data.email}
+- Teléfono: ${data.telefono || 'No proporcionado'}
+- Asunto: ${data.asunto || 'Consulta general'}
+
+MENSAJE:
+${data.mensaje}
+
+---
+Este mensaje fue enviado desde el formulario de contacto del sitio web.
+Fecha: ${new Date().toLocaleString('es-CR')}
+    `.trim();
+    
+    return { subject, body };
+  }
+
+  sendEmail(emailContent) {
+    const mailtoLink = `mailto:acamacho20027@ufide.ac.cr?subject=${encodeURIComponent(emailContent.subject)}&body=${encodeURIComponent(emailContent.body)}`;
+    
+    // Crear enlace temporal y abrirlo
+    const link = document.createElement('a');
+    link.href = mailtoLink;
+    link.target = '_blank';
+    link.click();
+  }
+
+  showModal() {
+    const modal = document.getElementById('contactModal');
+    if (modal) {
+      modal.classList.add('show');
+      
+      // Cerrar modal al hacer clic en el botón
+      const closeBtn = document.getElementById('closeModal');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => this.hideModal());
+      }
+      
+      // Cerrar modal al hacer clic fuera del contenido
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          this.hideModal();
+        }
+      });
+      
+      // Cerrar modal con tecla Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          this.hideModal();
+        }
+      });
+    }
+  }
+
+  hideModal() {
+    const modal = document.getElementById('contactModal');
+    if (modal) {
+      modal.classList.remove('show');
+    }
   }
 }
 

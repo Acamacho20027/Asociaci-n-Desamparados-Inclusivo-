@@ -66,7 +66,7 @@ Proyecto_ADI/
 - **Videos Tutoriales**: Contenido educativo accesible con tutoriales de tecnología
 - **Ya! Danza**: Redirección a sitio externo (https://yadanza.desampainclusivo.com)
 - **Deportes Adaptados**: Programa de deportes adaptados con Esgrima, Ping Pong y Basketball
-- **Contacto**: Información de contacto y formulario
+- **Contacto**: Información de contacto, redes sociales, mapa interactivo y formulario funcional
 
 ### 🎭 Actividades Principales
 - **Charlas**: Espacios de diálogo sobre inclusión y derechos
@@ -143,6 +143,23 @@ Proyecto_ADI/
 - **Día Nacional de la Persona con Discapacidad**: Primera celebración organizada en Desamparados (2016)
 - **Representación en Asamblea Nacional**: Luis Flores como representante de juventudes con discapacidad
 - **CAR SHOW INCLUSIVO**: Evento con carros adaptados y conductores con discapacidad
+
+### 📧 Formulario de Contacto
+- **Funcionalidad completa**: Formulario de contacto con envío automático de email
+- **Validación**: Campos obligatorios validados automáticamente
+- **Email automático**: Se abre el cliente de email del usuario con mensaje pre-llenado
+- **Destinatario**: acamacho20027@ufide.ac.cr
+- **Formato profesional**: Email estructurado con todos los datos del formulario
+- **Modal de confirmación**: Interfaz elegante con animaciones y diseño profesional
+- **Experiencia mejorada**: Feedback visual atractivo en lugar de alert básico
+- **Campos incluidos**: Nombre, email, teléfono, asunto, mensaje y aceptación de términos
+- **Características del modal**:
+  - Icono de checkmark animado
+  - Título "¡Mensaje Enviado!" centrado
+  - Mensaje de confirmación claro
+  - Botón "Entendido" con efectos hover
+  - Múltiples formas de cerrar (botón, clic fuera, Escape)
+  - Diseño responsive para todos los dispositivos
 
 ### 🤝 Formas de Apoyo
 - **Trabajo Comunal Universitario (TCU)**: Programa para estudiantes universitarios
@@ -223,6 +240,29 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.11.4 - Modal de Confirmación Estilizado para Formulario
+- 🎨 **Nuevo**: Modal de confirmación profesional con diseño consistente
+- ✨ **Animaciones**: Efectos suaves de entrada y salida (fade in, slide in)
+- ✅ **Icono animado**: Checkmark verde con animación de entrada
+- 🎯 **Título centrado**: "¡Mensaje Enviado!" alineado con icono
+- 💬 **Mensaje simplificado**: Solo "¡Gracias por tu mensaje! Te contactaremos pronto."
+- 📱 **Responsive**: Diseño optimizado para móviles y escritorio
+- 🖱️ **Múltiples formas de cerrar**: Botón, clic fuera, tecla Escape
+- 🎨 **Estilos consistentes**: Paleta de colores y tipografía del sitio
+- 🔄 **Reemplazo**: Modal profesional en lugar de alert básico del navegador
+- 🎭 **Experiencia mejorada**: Feedback visual atractivo y profesional
+
+### v1.11.3 - Configuración de Formulario de Contacto con Email
+- 📧 **Nuevo**: Funcionalidad de envío de email desde formulario de contacto
+- 📬 **Configurado**: Correo de destino a acamacho20027@ufide.ac.cr
+- ✅ **Validación**: Campos obligatorios (nombre, email, mensaje) validados automáticamente
+- 📝 **Formato**: Email profesional con datos estructurados del formulario
+- 🚀 **Automático**: Apertura del cliente de email del usuario con mensaje pre-llenado
+- 💬 **Confirmación**: Mensaje de agradecimiento y limpieza automática del formulario
+- 🕒 **Timestamp**: Fecha y hora del envío incluida en el email
+- 🏷️ **Identificación**: Email identificado como enviado desde el sitio web
+- 📋 **Estructura**: Asunto personalizado según el tipo de consulta seleccionado
 
 ### v1.11.2 - Reorganización y Actualización de Emprendimientos
 - 🔄 **Reorganizado**: Sucucactus Paa'Macho movido de Panadería a sección de Arte
