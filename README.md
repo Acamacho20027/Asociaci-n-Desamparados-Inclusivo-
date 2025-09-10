@@ -210,15 +210,37 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 ## 📞 Contacto
 
 **Asociación Desampa Inclusivo**
-- 📧 Email: info@desampainclusivo.org
-- 📞 Teléfono: +506 2222-3333
-- 📍 Dirección: Calle Principal #123, Barrio Desampa, San José, Costa Rica
+- 📧 Email: desampainclusivo@hotmail.com
+- 💬 WhatsApp: 8369 1359
+- 📍 Dirección: San José, Desamparados. Del cementerio 500 metros Sur y 50 metros al Oeste
+- 📱 Redes Sociales:
+  - Facebook: https://www.facebook.com/DesampaInclusivo
+  - Instagram: https://www.instagram.com/desampainclusivo_
+  - TikTok: https://www.tiktok.com/@desampainclusivo
 
 ## 📄 Licencia
 
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.11.0 - Actualización Completa de Página de Contacto
+- ✨ **Nuevo**: Página de contacto completamente renovada con información actualizada
+- 📍 **Actualizado**: Dirección real: San José, Desamparados. Del cementerio 500 metros Sur y 50 metros al Oeste
+- 📧 **Actualizado**: Correo electrónico oficial: desampainclusivo@hotmail.com
+- 📱 **Nuevo**: Redes sociales con iconos Font Awesome consistentes:
+  * Facebook: https://www.facebook.com/DesampaInclusivo
+  * Instagram: https://www.instagram.com/desampainclusivo_
+  * TikTok: https://www.tiktok.com/@desampainclusivo
+  * WhatsApp: 8369 1359 (con enlace directo)
+- 🗺️ **Nuevo**: Mapa de Google Maps embebido e interactivo con ubicación exacta
+- ❌ **Eliminado**: Sección de Preguntas Frecuentes completamente removida
+- 🎨 **Mejorado**: Diseño más limpio con sección de redes sociales integrada
+- 📱 **Mejorado**: Iconos Font Awesome consistentes con página de emprendimientos
+- 🎯 **Optimizado**: Layout de 3 columnas para mejor distribución de información
+- 📏 **Mejorado**: Espaciado mejorado entre mapa y dirección
+- 🔗 **Agregado**: Enlaces funcionales de mailto y WhatsApp
+- 📚 **Actualizado**: README con nueva información de contacto
 
 ### v1.10.0 - Sección de Deportes Adaptados Renovada
 - 🏅 **Nuevo**: Sección completa de Deportes Adaptados con 3 disciplinas
