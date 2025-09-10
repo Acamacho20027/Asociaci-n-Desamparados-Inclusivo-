@@ -167,7 +167,7 @@ Proyecto_ADI/
 - **Información bancaria**: Cuenta del Banco Nacional con todos los datos necesarios
 
 ### Menú de Accesibilidad
-Haz clic en el botón ♿ en la esquina superior derecha para acceder a las opciones de accesibilidad:
+Haz clic en el botón ⚙ en la esquina inferior izquierda para acceder a las opciones de accesibilidad:
 - **Contraste +**: Activar alto contraste
 - **Resaltar enlaces**: Resaltar todos los enlaces
 - **Agrandar texto**: Aumentar tamaño de fuente
@@ -240,6 +240,16 @@ El proyecto utiliza variables CSS para facilitar la personalización:
 © 2024 Asociación Desampa Inclusivo. Todos los derechos reservados.
 
 ## 📝 Changelog
+
+### v1.11.5 - Reubicación del Menú de Accesibilidad y Actualización de Icono
+- 📍 **Reubicado**: Botón de accesibilidad movido a esquina inferior izquierda
+- ⬆️ **Despliegue mejorado**: Menú se despliega hacia arriba desde la parte inferior
+- ⚙️ **Icono actualizado**: Cambio de emoji silla de ruedas a símbolo de tuerca blanca
+- 🎯 **Menos intrusivo**: No interfiere con el contenido principal de la página
+- 📱 **Responsive optimizado**: Posicionamiento mejorado para dispositivos móviles
+- 🎨 **Mejor contraste**: Tuerca blanca sobre fondo azul para mejor visibilidad
+- ✨ **Experiencia mejorada**: Acceso más natural y menos obstructivo
+- 🔧 **Funcionalidad mantenida**: Todas las opciones de accesibilidad conservadas
 
 ### v1.11.4 - Modal de Confirmación Estilizado para Formulario
 - 🎨 **Nuevo**: Modal de confirmación profesional con diseño consistente

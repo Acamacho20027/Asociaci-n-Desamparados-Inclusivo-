@@ -73,7 +73,7 @@ class AccessibilityManager {
         </button>
       </div>
       <button class="accessibility-toggle" id="accessibilityToggle" aria-label="Menú de accesibilidad">
-        ♿
+        ⚙
       </button>
     `;
 

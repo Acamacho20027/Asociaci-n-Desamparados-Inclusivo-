@@ -221,8 +221,8 @@ body.no-animations * {
 /* Menú de accesibilidad */
 .accessibility-menu {
   position: fixed;
-  top: 80px;
-  right: var(--spacing-lg);
+  bottom: 80px;
+  left: var(--spacing-lg);
   background: white;
   border-radius: 8px;
   box-shadow: var(--shadow-heavy);
@@ -240,19 +240,22 @@ body.no-animations * {
 
 .accessibility-toggle {
   position: fixed;
-  top: 80px;
-  right: var(--spacing-lg);
+  bottom: 20px;
+  left: var(--spacing-lg);
   background: var(--accent-color);
   color: white;
   border: none;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  font-size: var(--font-size-large);
+  font-size: 1.5rem;
   cursor: pointer;
   z-index: 1001;
   box-shadow: var(--shadow-medium);
   transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .accessibility-toggle:hover {
@@ -508,13 +511,15 @@ body.custom-cursor {
   }
   
   .accessibility-menu {
-    right: var(--spacing-sm);
+    left: var(--spacing-sm);
+    bottom: 80px;
     width: calc(100vw - 2rem);
     max-width: 300px;
   }
   
   .accessibility-toggle {
-    right: var(--spacing-sm);
+    left: var(--spacing-sm);
+    bottom: 20px;
   }
   
   .container {
