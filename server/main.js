@@ -633,7 +633,7 @@ Fecha: ${new Date().toLocaleString('es-CR')}
   }
 
   sendEmail(emailContent) {
-    const mailtoLink = `mailto:acamacho20027@ufide.ac.cr?subject=${encodeURIComponent(emailContent.subject)}&body=${encodeURIComponent(emailContent.body)}`;
+    const mailtoLink = `mailto:sreyes80251@ufide.ac.cr?subject=${encodeURIComponent(emailContent.subject)}&body=${encodeURIComponent(emailContent.body)}`;
     
     // Crear enlace temporal y abrirlo
     const link = document.createElement('a');
